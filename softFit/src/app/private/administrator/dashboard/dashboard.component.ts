@@ -20,6 +20,6 @@ export class DashboardComponent {
    }
 
    getUsername(){
-    this.username = this.userSettingsService.getUsername();
+    this.username = this.userSettingsService.getUsernameInCookies();
    };
 }

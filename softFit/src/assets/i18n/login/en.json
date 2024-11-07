@@ -1,0 +1,12 @@
+{
+    "LOGIN": {
+        "ADMIN": "Administrator",
+        "MEMBER": "Member",
+        "TRAINER": "Trainer",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "FORGOT_PASSWORD": "Forgot password",
+        "LOGIN": "Log in",
+        "INVALID_CREDENTIALS": "Username or/and password incorrect"
+    }
+}

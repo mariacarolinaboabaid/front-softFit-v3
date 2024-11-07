@@ -26,8 +26,7 @@ export class MainLayoutComponent {
    };
 
    getUsername(){
-    this.userSettingsService.setUsername();
-    this.username = this.userSettingsService.getUsername();
+    this.username = this.userSettingsService.getUsernameInCookies();
    };
 
   logout(){}

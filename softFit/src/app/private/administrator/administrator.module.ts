@@ -7,6 +7,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardsComponent } from './dashboard/components/cards/cards.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthenticationInterceptor } from 'src/interceptor/authentication.interceptor';
 
 
 @NgModule({
@@ -22,7 +24,12 @@ import { CardsComponent } from './dashboard/components/cards/cards.component';
     TranslateModule
   ],
   providers: [
-    TranslateService
+    TranslateService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthenticationInterceptor,
+      multi: true 
+    }
   ]
 })
 export class AdministratorModule { }

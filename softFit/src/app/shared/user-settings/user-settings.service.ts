@@ -7,20 +7,35 @@ import { CookieService } from 'ngx-cookie-service';
 export class UserSettingsService {
 
   username: string = "Maria Carolina";
+  accessToken: string = "";
+  currency: string = "";
+  expirationTime = 24 * 60 * 60;
 
-  constructor (
+  constructor(
     private cookieService: CookieService
   ) { }
 
-  setUsername() {
-    this.cookieService.set('username', this.username);
+  setUserSettingsInCookies(
+    username: string,
+    accessToken: string,
+    currency: string
+  ) {
+    this.cookieService.set('username', username, this.expirationTime, '/');
+    this.cookieService.set('accessToken', accessToken, this.expirationTime, '/');
+    this.cookieService.set('currency', currency, this.expirationTime, '/');
   };
 
-  getUsername() {
+  getUsernameInCookies() {
     return this.cookieService.get('username');
   };
 
-  deleteUsername() {
-    this.cookieService.delete('cookieName');
+  getAccessTokenInCookies() {
+    return this.cookieService.get('accessToken');
+  };
+
+  deleteUserSettingsInCookies() {
+    this.cookieService.delete('username');
+    this.cookieService.delete('accessToken');
+    this.cookieService.delete('accessToken');
   };
 }

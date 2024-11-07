@@ -1,0 +1,12 @@
+{
+    "LOGIN": {
+        "ADMIN": "Administrador",
+        "MEMBER": "Aluno",
+        "TRAINER": "Professor",
+        "USERNAME": "Usuário",
+        "PASSWORD": "Senha",
+        "FORGOT_PASSWORD": "Esqueceu a senha?",
+        "LOGIN": "Entrar",
+        "INVALID_CREDENTIALS": "Usuário e/ou senha incorretos"
+    }
+}
