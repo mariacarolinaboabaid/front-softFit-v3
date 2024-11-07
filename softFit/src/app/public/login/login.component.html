@@ -1,0 +1,58 @@
+<div class="login">
+    <img src="../../../assets/images/login/background.jpg">
+
+    <div class="login-container-form">
+        <h1 class="login-title">Login</h1>
+
+        <div class="login-profiles">
+            <button *ngFor="let profile of profiles" (click)="selectProfile(profile.value)"
+                class="login-profiles-button"
+                [ngClass]="{'login-profiles-button-selected': userProfile === profile.value}">
+                {{ profile.option | translate }}
+            </button>
+        </div>
+        <form [formGroup]="form"
+        class="login-form">
+            <div class="login-form-block-field">
+                <label class="login-form-block-field-label" for="username">
+                    {{ username | translate}}
+                </label>
+                <input class="login-form-block-field-input" 
+                formControlName="username"
+                type="email" name="username" id="username">
+            </div>
+
+            <div class="login-form-block-field">
+                <label class="login-form-block-field-label" for="password">
+                    {{ password | translate}}
+                </label>
+                <input class="login-form-block-field-input" 
+                type="{{ showPassword ? 'text' : 'password' }}"
+                formControlName="password"
+                name="password" id="password">
+                <button type="button"
+                class="login-form-show-password" (click)="changeVisibilityOfPassword()">
+                    <img *ngIf="showPassword" class="login-form-show-password-icon"
+                        src="../../../assets/icons/login/hide.png" alt="">
+                    <img *ngIf="!showPassword" class="login-form-show-password-icon"
+                        src="../../../assets/icons/login/show.png" alt="">
+                </button>
+                <p class="login-form-forgot-password">
+                    {{ forgotPassword | translate}}
+                </p>
+            </div>
+            <div class="login-form-container-failed"
+            [ngClass]="{'login-form-container-failed-show': loginFailed}">
+                <p class="login-form-container-failed-text">
+                    {{ invalidCredentials | translate }}
+                </p>
+            </div>
+            <button (click)="login()"
+            [disabled]="form.invalid"
+            class="login-form-button-submit"
+            [ngClass]="{'login-form-button-submit-disabled': form.invalid}">
+                {{  buttonLogin | translate}}
+            </button>
+        </form>
+    </div>
+</div>

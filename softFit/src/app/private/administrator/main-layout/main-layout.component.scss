@@ -25,7 +25,7 @@
             align-items: center;
             justify-content: flex-start;
             gap: 4px;
-            border-bottom: 1px solid #dfdede;
+            border-bottom: 1px solid #D8D8E6;
         }
 
         &-title {
@@ -46,15 +46,26 @@
             flex: 1;
         }
 
-        &-user {
-            width: calc(100% - 32px);
-            height: 50px;
+        &-utils {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        &-user {
+            width: 100%;
+            max-height: 50px;
+            display: flex;
+            align-items: flex-start;
             justify-content: flex-start;
-            padding-left: 20px;
+            gap: 5px;
+            padding-left: 15px;
             box-sizing: border-box;
-            gap: 8px;
 
             &-icon {
                 height: 17px;
@@ -72,10 +83,12 @@
 
         &-logout {
             cursor: pointer;
-            margin: auto;
-            width: calc(100% - 42px);
+            text-align: left;
+            width: calc(100% - 22px);
             height: 30px;
-            margin-bottom: 22px;
+            margin-left: 12px;
+            padding-left: 12px;
+            box-sizing: border-box;
             background-color: #e4e4f5;
             border: none;
             border-radius: 10px;
@@ -83,16 +96,34 @@
             font-size: 11px;
             color: #3F4B55;
         }
+
+        &-language {
+            cursor: pointer;
+            height: 30px;
+            width: calc(100% - 22px);
+            margin-left: 12px;
+            padding-left: 9px;
+            box-sizing: border-box;
+            background-color: #eeeeee;
+            border-radius: 10px;
+            border: none;
+            font-family: 'Poppins';
+            font-size: 10.4px;
+            outline: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
     }
 
     &-container-right {
         flex: 1;
-        height: calc(100% - 40px);
-        background-color: #FFFFFF;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        border: 1px solid #c5c0c0;
+        height:100%;
+        background-color: #ffffff;
+        border-left: 1px solid #D8D8E6;
+        padding: 35px 50px;
+        box-sizing: border-box;
     }
 }
