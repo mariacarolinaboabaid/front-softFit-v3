@@ -1,0 +1,29 @@
+<div class="main-layout">
+
+    <div class="main-layout-container-left">
+        <div class="main-layout-container-left-title-and-logo">
+            <h1 class="main-layout-container-left-title">
+                SoftFit
+            </h1>
+        </div>
+        <div class="main-layout-container-left-sidenav">
+            <app-sidenav [dataPath]="sidenavDataPath"></app-sidenav>
+        </div>
+        <div class="main-layout-container-left-user">
+            <img class="main-layout-container-left-user-icon"
+            src="../../../../assets/icons/users/user.svg" alt="">
+            <p class="main-layout-container-left-user-username">
+                Maria Carolina
+            </p>
+        </div>
+        <button class="main-layout-container-left-logout">
+            {{ logout | translate }}
+        </button>
+    </div>
+
+    <div class="main-layout-container-right">
+        <router-outlet></router-outlet>
+        oi
+
+    </div>
+</div>

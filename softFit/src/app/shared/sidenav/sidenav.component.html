@@ -1,0 +1,15 @@
+<nav class="sidenav">
+    <ul class="sidenav-list-links">
+        <li (click)="navigateToLink(link.route)"
+        *ngFor="let link of links"
+        class="sidenav-link"
+        [ngClass]="{'sidenav-link-active': navLinkIsActive(link.route)}">
+        <img class="sidenav-link-icon"
+        [src]="link.icon" alt="">
+            <p class="sidenav-link-text">
+                {{ link.link | translate }}
+            </p>
+        </li>
+    </ul>
+</nav>
+

@@ -1,0 +1,28 @@
+{
+    "links": [
+        {
+            "id": 1,
+            "link": "ADMIN.NAVLINKS.DASHBOARD",
+            "route": "/home",
+            "icon": "../../../assets/icons/admin/sidenav/dahsboard.png"
+        },
+        {
+            "id": 2,
+            "link": "ADMIN.NAVLINKS.TEAM",
+            "route": "/team",
+            "icon": "../../../assets/icons/admin/sidenav/team.png"
+        },
+        {
+            "id": 3,
+            "link": "ADMIN.NAVLINKS.MEMBERS",
+            "route": "/members",
+            "icon": "../../../assets/icons/admin/sidenav/members.png"
+        },
+        {
+            "id": 4,
+            "link": "ADMIN.NAVLINKS.CLASSES",
+            "route": "/classes",
+            "icon": "../../../assets/icons/admin/sidenav/classes.png"
+        }
+    ]
+}

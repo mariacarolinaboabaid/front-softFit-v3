@@ -1,0 +1,10 @@
+{
+    "ADMIN": {
+        "NAVLINKS": {
+            "DASHBOARD": "Dashboard",
+            "TEAM": "Team",
+            "MEMBERS": "Members",
+            "CLASSES": "Classes"
+        }
+    }
+}

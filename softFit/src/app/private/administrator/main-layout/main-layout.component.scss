@@ -1,0 +1,98 @@
+.main-layout {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F6FB;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    &-container-left {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-top: 25px;
+
+        &-title-and-logo {
+            height: 30px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            border-bottom: 1px solid #dfdede;
+        }
+
+        &-title {
+            margin: 0px;
+            font-family: 'Poppins';
+            font-family: 'Mona-sans';
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &-logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        &-sidenav {
+            width: 100%;
+            flex: 1;
+        }
+
+        &-user {
+            width: calc(100% - 32px);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 20px;
+            box-sizing: border-box;
+            gap: 8px;
+
+            &-icon {
+                height: 17px;
+                width: 17px;
+            }
+
+            &-username {
+                padding: 0px;
+                margin: 0px;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        &-logout {
+            cursor: pointer;
+            margin: auto;
+            width: calc(100% - 42px);
+            height: 30px;
+            margin-bottom: 22px;
+            background-color: #e4e4f5;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Poppins';
+            font-size: 11px;
+            color: #3F4B55;
+        }
+    }
+
+    &-container-right {
+        flex: 1;
+        height: calc(100% - 40px);
+        background-color: #FFFFFF;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #c5c0c0;
+    }
+}
