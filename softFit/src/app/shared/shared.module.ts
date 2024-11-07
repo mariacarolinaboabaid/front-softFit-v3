@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
-
 @NgModule({
   declarations: [
     SidenavComponent
@@ -19,7 +18,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     TranslateService
   ],
   exports: [
-    SidenavComponent
+    SidenavComponent,
   ]
 })
 export class SharedModule { }
