@@ -9,6 +9,8 @@ import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
 import { AdministratorModule } from './private/administrator/administrator.module';
 import { LoginComponent } from './public/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
+
 
 export function HttpLoaderFactory(httpBackend: HttpBackend) {
   return new MultiTranslateHttpLoader(httpBackend, [
@@ -21,7 +23,8 @@ export function HttpLoaderFactory(httpBackend: HttpBackend) {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

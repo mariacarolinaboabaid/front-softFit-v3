@@ -5,6 +5,20 @@
             "TEAM": "Equipe",
             "MEMBERS": "Alunos",
             "CLASSES": "Aulas"
+        },
+        "DASHBOARD": {
+            "TOTAL_CUSTOMERS": "Alunos",
+            "TOTAL_DELIQUENT_CUSTOMERS": "Alunos inadimplentes",
+            "TOTAL_DELIQUENCY_AMOUNT": "Valor total da inadimplência",
+            "TOTAL_RENEWED_ENROLLMENTS": "Matrículas renovadas",
+            "TOTAL_CANCELED_ENROLLMENTS": "Matrículas canceladas",
+            "TOTAL_NEW_ENROLLMENTS": "Novas matrículas",
+            "TOTAL_PREMIUM_ENROLLMENTS": "Matrículas premium",
+            "TOTAL_BASIC_ENROLLMENTS": "Matrículas básicas",
+            "INSTRUCTOR_RANKING": "Professores com melhor ranking",
+            "RATING_VOTES": "Votos",
+            "RATING_VALUE": "Avaliação",
+            "DELIQUENT_MEMBERS": "Alunos em débito"
         }
     }
 }

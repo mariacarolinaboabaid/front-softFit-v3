@@ -1,0 +1,40 @@
+<div class="container">
+    <h3 class="container-title">
+        {{ title | translate }}
+    </h3>
+    <div class="container-ranking">
+        <div *ngFor="let trainer of listBestRatedTrainers" 
+        class="container-card-trainer">
+            <div class="container-card-trainer-name">
+                <button (click)="navigateToTrainerProfile(trainer.id)"
+                class="container-card-trainer-name-text">
+                    {{ trainer.fullName }}
+                </button>
+            </div>
+            <div  class="container-card-trainer-info">
+                <div class="container-card-trainer-info-left">
+                    <div class="container-card-trainer-info-left-holder">
+                        <p class="container-card-trainer-info-left-holder-legend">
+                            {{ value | translate }}
+                        </p>
+                        <p class="container-card-trainer-info-left-holder-value">
+                            {{ trainer.ratingValue }}
+                        </p>
+                    </div>
+                    <div class="container-card-trainer-info-left-holder">
+                        <p class="container-card-trainer-info-left-holder-legend">
+                            {{ votes | translate }}
+                        </p>
+                        <p class="container-card-trainer-info-left-holder-value">
+                            {{ trainer.ratingVotesQuantity }}
+                        </p>
+                    </div>
+                </div>
+                <div class="container-card-trainer-info-right">
+                    <img class="container-card-trainer-info-right-image"
+                    src="../../../../../../assets/icons/users/user.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,20 +1,21 @@
 export interface DashboardCards {
     totalCustomers:             number;
     totalDeliquentCustomers:    number;
-    totalDelinquencyAmount:     number;
+    totalDeliquencyAmount:      number;
     totalRenewedEnrollments:    number;
     totalCanceledEnrollments:   number;
     totalNewEnrollments:        number;
     totalPremiumEnrollments:    number;
     totalBasicEnrollments:      number;
+    [key: string]: number;
 }
 
-export interface DeliquentCustomer {
+export interface DeliquentMember {
     id:       string;
     fullName: string;
 }
 
-export interface BestRatedInstructors {
+export interface BestRatedTrainers {
     id:                  string;
     fullName:            string;
     ratingValue:         number;

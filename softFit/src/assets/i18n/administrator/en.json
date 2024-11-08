@@ -5,6 +5,20 @@
             "TEAM": "Team",
             "MEMBERS": "Members",
             "CLASSES": "Classes"
+        },
+        "DASHBOARD": {
+            "TOTAL_CUSTOMERS": "Members",
+            "TOTAL_DELIQUENT_CUSTOMERS": "Delinquent members",
+            "TOTAL_DELIQUENCY_AMOUNT": "Total deliquency amount",
+            "TOTAL_RENEWED_ENROLLMENTS": "Renewed enrollments",
+            "TOTAL_CANCELED_ENROLLMENTS": "Canceled enrollments",
+            "TOTAL_NEW_ENROLLMENTS": "New enrollments",
+            "TOTAL_PREMIUM_ENROLLMENTS": "Premium enrollments",
+            "TOTAL_BASIC_ENROLLMENTS": "Basic enrollments",
+            "INSTRUCTOR_RANKING": "The top-ranked trainers",
+            "RATING_VOTES": "Votes",
+            "RATING_VALUE": "Rating",
+            "DELIQUENT_MEMBERS": "Members in debt"
         }
     }
 }

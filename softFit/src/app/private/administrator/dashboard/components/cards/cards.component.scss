@@ -1,0 +1,40 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 220px); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 25px;
+
+    &-card {
+        width: 220px;
+        height: 90px;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #D8D8E6;
+        border-radius: 10px;
+
+        &-legend {
+            font-size: 14px;
+            color: #57506b;
+            font-family: 'Ibm';
+        }
+
+        &-value {
+            font-size: 26.5px;
+            color: #65308F;
+            font-weight: 800;
+        }
+    }
+}
+
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}

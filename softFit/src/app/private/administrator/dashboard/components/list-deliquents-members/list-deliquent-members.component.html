@@ -1,0 +1,20 @@
+<div class="container">
+    <h3 class="container-title">
+        {{ title | translate }}
+    </h3>
+    <div class="container-list">
+        <div *ngFor="let member of listDeliquentMembers" 
+        class="container-card-member">
+            <img class="container-card-member-image" 
+            src="../../../../../../assets/icons/users/user-grey.png" alt="">
+            <p class="container-card-member-name">
+                {{ member.fullName }}
+            </p>
+            <button (click)="navigateToMemberProfile(member.id)"
+            class="container-card-member-button">
+                <img class="container-card-member-button-image"
+                src="../../../../../../assets/icons/admin/dashboard/go-to.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>

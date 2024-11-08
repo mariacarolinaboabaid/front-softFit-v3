@@ -9,9 +9,9 @@
     &-container-form {
         position: relative;
         width: 600px;
-        height: calc(100% - 180px);
-        max-height: 500px;
-        padding: 40px 30px;
+        height: calc(100% - 150px);
+        max-height: 550px;
+        padding: 30px 30px;
         box-sizing: border-box;
         margin: 10px;
         margin-right: 40px;
@@ -57,12 +57,12 @@
             padding: 8px;
             border: none;
             font-family: 'Poppins';
-            font-size: 11px;
+            font-size: 13px;
             background-color: transparent;
             color: #343738;
             border-radius: 15px;
             background-color: #fff;
-            border: 1px solid #969696fa;
+            border: 1px solid #b2b0b0fa;
             box-sizing: border-box;
 
             &-selected {
@@ -114,7 +114,7 @@
             cursor: pointer;
             position: absolute;
             top: 30px;
-            right: 17px;
+            right: 7px;
             width: 30px;
             height: 30px;
             background-color: transparent;
@@ -178,6 +178,31 @@
 
             &-disabled {
                 opacity: 50%;
+            }
+        }
+    }
+
+    &-language {
+        width: calc(100% - 45px);
+        display: flex;
+        justify-content: flex-end;
+
+        &-select {
+            cursor: pointer;
+            height: 30px;
+            width: 50px;
+            padding-left: 9px;
+            box-sizing: border-box;
+            background-color: transparent;
+            border-radius: 10px;
+            border: none;
+            font-family: 'Poppins';
+            font-size: 15px;
+            outline: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
             }
         }
     }
