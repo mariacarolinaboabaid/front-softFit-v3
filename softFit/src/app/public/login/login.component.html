@@ -1,9 +1,7 @@
 <div class="login">
     <img src="../../../assets/images/login/background.jpg">
-
     <div class="login-container-form">
         <h1 class="login-title">Login</h1>
-
         <div class="login-profiles">
             <button *ngFor="let profile of profiles" (click)="selectProfile(profile.value)"
                 class="login-profiles-button"
@@ -54,5 +52,13 @@
                 {{  buttonLogin | translate}}
             </button>
         </form>
+        <div class="login-language">
+            <select class="login-language-select"
+            [(ngModel)]="selectedLanguage"
+            (change)="changeLanguage($event)">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
     </div>
 </div>

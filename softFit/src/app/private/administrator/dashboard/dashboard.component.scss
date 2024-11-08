@@ -1,6 +1,22 @@
 .dashboard {
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
 
-    &-container-left {}
+    &-container-left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        height: 100%;
+        padding: 45px 50px;
+        box-sizing: border-box;
+        border-right: 1px solid #d8d8e6a6;
+    }
 
     &-welcome {
         padding: 0px;
@@ -8,7 +24,8 @@
         font-family: 'Ibm';
     }
 
-    &-container-right {}
-
-
+    &-container-right {
+        height: 100%;
+        flex: 1;
+    }
 }

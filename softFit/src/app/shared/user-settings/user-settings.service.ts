@@ -6,10 +6,11 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class UserSettingsService {
 
-  username: string = "Maria Carolina";
+  username: string = "";
   accessToken: string = "";
   currency: string = "";
   expirationTime = 24 * 60 * 60;
+  language: string = "";
 
   constructor(
     private cookieService: CookieService
@@ -23,7 +24,12 @@ export class UserSettingsService {
     this.cookieService.set('username', username, this.expirationTime, '/');
     this.cookieService.set('accessToken', accessToken, this.expirationTime, '/');
     this.cookieService.set('currency', currency, this.expirationTime, '/');
+    this.cookieService.set('currency', currency, this.expirationTime, '/');
   };
+
+  setUserSettingsLanguageInCookies(language: string){
+    this.cookieService.set('language', language, this.expirationTime);
+  }
 
   getUsernameInCookies() {
     return this.cookieService.get('username');
@@ -31,6 +37,10 @@ export class UserSettingsService {
 
   getAccessTokenInCookies() {
     return this.cookieService.get('accessToken');
+  };
+
+  getLanguageInCookies(){
+    return this.cookieService.get('language');
   };
 
   deleteUserSettingsInCookies() {

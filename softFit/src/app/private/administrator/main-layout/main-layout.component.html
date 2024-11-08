@@ -19,6 +19,7 @@
                 {{ buttonLogout | translate }}
             </button>
             <select class="main-layout-container-left-language" 
+            [(ngModel)]="selectedLanguage"
             (change)="changeLanguage($event)">
                 <option value="pt">PT</option>
                 <option value="en">EN</option>

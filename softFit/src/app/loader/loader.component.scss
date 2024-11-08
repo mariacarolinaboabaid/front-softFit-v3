@@ -1,0 +1,33 @@
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3a3a3a84;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 78px;
+    height: 78px;
+    border: 7px solid #ffffff48;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

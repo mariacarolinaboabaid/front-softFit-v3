@@ -1,0 +1,81 @@
+.container {
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50x;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+
+    &-title {
+        height: 20px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        text-align: left;
+        padding: 30px 25px;
+        box-sizing: border-box;
+    }
+
+    &-list {
+        height: calc(100% - 35px);
+        max-height: calc(100% - 35px);
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &-card-member {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid #d8d8e67c;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        padding-left: 27px;
+        box-sizing: border-box;
+
+        &-image {
+            width: 27px;
+            height: 27px;
+        }
+
+        &-name {
+            font-family: 'Ibm';
+            font-size: 14px;
+            color: #696778;
+        }
+
+        &-button {
+            cursor: pointer;
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            background-color: transparent;
+            border: none;
+            width: 24px;
+            height: 24px;
+
+            &-image {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,117 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+
+    &-title {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        font-size: 14px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        text-align: left;
+    }
+
+    &-ranking {
+        display: grid;
+        grid-template-columns: repeat(3, 220px); 
+        grid-template-rows: repeat(2, 1fr);    
+        gap: 25px;
+    }
+
+    &-card-trainer {
+        position: relative;
+        width: 220px;
+        height: 110px;
+        border: 1px solid #D8D8E6;
+        border-radius: 10px;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 18px;
+
+        &-name {
+            width: 100%;
+
+            &-text {
+                cursor: pointer;
+                font-family: 'Ibm';
+                font-size: 12.8px;
+                font-weight: bold;
+                border: 0.8px solid #2B63C9;
+                background-color: transparent;
+                border-radius: 10px;
+                padding: 2.5px 15px;
+                color: #2B63C9;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-info {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-left: 7px;
+            box-sizing: border-box;
+
+            &-left {
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                gap: 24px;
+
+                &-holder {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    &-legend {
+                        font-family: 'Ibm';
+                        font-size: 10.6px;
+                        color: #696778;
+                        text-transform: uppercase;
+                    }
+
+                    &-value {
+                        font-family: 'Ibm';
+                        font-size: 13px;
+                        color: #57506b;
+                    }
+                }
+            }
+
+            &-right {
+                width: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                &-image {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}

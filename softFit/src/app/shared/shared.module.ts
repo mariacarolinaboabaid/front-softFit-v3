@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LoaderComponent } from '../loader/loader.component';
 
 
 @NgModule({
   declarations: [
-    SidenavComponent
+    SidenavComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +19,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     TranslateService
   ],
   exports: [
-    SidenavComponent,
+    SidenavComponent
   ]
 })
 export class SharedModule { }

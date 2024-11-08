@@ -1,1 +1,10 @@
-<p>cards works!</p>
+<div class="cards">
+    <div *ngFor="let card of cards" class="cards-card">
+        <p class="cards-card-value">
+            {{ card.value  }}
+        </p>
+        <p class="cards-card-legend">
+            {{ card.legend | translate }}
+        </p>
+    </div>
+</div>
