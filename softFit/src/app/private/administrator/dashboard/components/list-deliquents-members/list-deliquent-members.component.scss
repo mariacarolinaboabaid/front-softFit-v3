@@ -10,9 +10,16 @@
     padding-bottom: 0px;
     box-sizing: border-box;
 
-    &-title {
-        height: 20px;
+    &-holder-title {
+        height: 70px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &-title {
+    
         padding: 0px;
         margin: 0px;
         font-size: 14px;
@@ -45,6 +52,11 @@
         gap: 15px;
         padding-left: 27px;
         box-sizing: border-box;
+        background-color: #fff;
+
+        &:first-child {
+            border-top: 1px solid #d8d8e67c;
+        }
 
         &-image {
             width: 27px;
